@@ -2,7 +2,7 @@ resource "aws_subnet" "StudentPlacement-integration-public-subnet-1b" {
   vpc_id     = aws_vpc.StudentPlacement-integration-dev.id
   cidr_block = "172.24.1.64/26"
   map_public_ip_on_launch = true
-  availability_zone = "eu-central-1b"
+  availability_zone = "us-east-1b"
 
   tags = {
     Name = "StudentPlacement-integration-public-subnet-1b"
